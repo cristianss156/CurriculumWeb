@@ -131,7 +131,7 @@ main {
 	display: inline-grid;
 	grid-template-columns: auto auto;
 	float: left;	
-	margin-top: 5px;
+	margin: 5px 10px;
 	box-sizing: border-box;
 	color: #666666;
 }
@@ -160,7 +160,6 @@ main {
 	float: left;
 	margin-top: 5px;
 	box-sizing: border-box;
-	color: #666666;
 }
 
 .card__content__social__item {
@@ -170,25 +169,25 @@ main {
 	margin:0 50px;
 }
 
-.card__content_job {
+.card__content_item {
 	clear: both;
 	float: left;
 	box-sizing: border-box;
 	margin: 16px 10px 5px;
 }
 
-.card__content_job_name {
+.card__content_item_name {
 	float: left;
 	clear: both;
 	margin-top: 0;
 	margin-bottom: 2px;
 }
 
-.card__content_job_name strong {
+.card__content_item_name strong {
 	font-weight: 500;
 }
 
-.card__content_job_det {
+.card__content_item_det {
 	clear: both;
 	float: left;
 	margin: 5px 10px 0 10px;
