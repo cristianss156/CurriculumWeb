@@ -11,20 +11,28 @@
   </head>
   <body>
     <header>
-   	  <h1 class="titulo">Curriculum web</h1>
-   	  <div class="divider"></div>
-    </header>
-
-    <div class="downloadFAB">
-    	<span class="material-icons md-24 downloadFAB__action">get_app</span>
-    	<span>Curriculum</span>
-    </div>
+   	  <h1 class="titulo">Curriculum</h1>
+   	  <nav class="tabs">
+   	  	<div class="tabs__inicio tabs__tab">
+   	  		<span>Inicio</span>
+   	  		<div class="tabs__indicador indicador_inicio"></div>
+   	  	</div>
+   	  	<div class="tabs__exp tabs__tab">
+   	  		<span>Experiencia</span>
+   	  		<div class="tabs__indicador indicador_exp"></div>
+   	  	</div>
+   	  	<div class="tabs__skills tabs__tab">
+   	  		<span>Habilidades</span>
+   	  		<div class="tabs__indicador indicador_skills"></div>
+   	  	</div>   	  	
+   	  </nav>
+    </header>    
 
     <main>
 
     	<section class="seccion">
 
-    		<div class="card">
+    		<div id="perfil" class="card">
 	    		<div class="card__content">
 	    			<div class="card__content__img">
 	    				<img src="images/foto.jpg" alt="Foto de perfil"/>
@@ -74,11 +82,7 @@
 
 	    	</div>
 
-    	</section>
-
-    	<section class="seccion">
-
-    		<div class="card">
+    		<!--<div id="trabajos" class="card">
     			<div class="card__content">    				
 		    		<span class="card__content__titulo">Experiencia laboral</span>
 		    		<div class="card__content_item">
@@ -110,11 +114,7 @@
     			</div>
     		</div>
 
-    	</section>
-
-    	<section class="seccion">
-
-    		<div class="card">
+    		<div id="estudios" class="card">
     			<div class="card__content">    				
 		    		<span class="card__content__titulo">Estudios</span>
 		    		<div class="card__content_item">
@@ -129,16 +129,21 @@
 		    			</p>
 	    			</div>
     			</div>
-    		</div>
+    		</div>-->
 
     	</section>
     </main>
 
-    <footer>
+    <div class="downloadFAB">
+    	<span class="material-icons md-24 downloadFAB__action">get_app</span>
+    	<span>Curriculum</span>
+    </div>
+
+    <!--<footer>
     	<div class="pie">
     		<span class="pie__year">2020</span>
     		<span class="pie__tecs">Realizado con: HMTL5, CSS3, BEM</span>
     	</div>
-    </footer>
+    </footer>-->
   </body>
 </html>
