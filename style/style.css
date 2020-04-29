@@ -61,11 +61,21 @@ header .tabs {
   color: #5f6368;
 }
 
+.tabs__tab span::after {
+	float: left;
+	content: "";
+	height: 3px;
+	width: 100%;
+	margin-top: 5px;	
+  border-radius: 3px 3px 0 0;
+  background-color: #018786;
+}
+
 .tabs__inicio {
 	grid-column: 1 / 2;
 }
 
-.tabs__exp {
+.tabs__exp {;
 	grid-column: 2 / 4;
 }
 
@@ -73,7 +83,7 @@ header .tabs {
 	grid-column: 4 / 6;
 }
 
-.indicador_inicio, .indicador_exp, .indicador_skills {
+/*.indicador_inicio, .indicador_exp, .indicador_skills {
 	visibility: hidden;
 }
 
@@ -84,7 +94,7 @@ header .tabs {
 	margin: 5px 0 0 25%;
 	border-radius: 3px 3px 0 0;
 	background-color: #018786;
-}
+}*/
 
 .divider {
 	position: relative;
