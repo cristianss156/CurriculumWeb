@@ -44,6 +44,7 @@ header .tabs {
 }
 
 .tabs__tab:active {
+	color: #018786;
 	background-color: rgba(1, 135, 134, 0.2);
 }
 
@@ -90,7 +91,6 @@ header .tabs {
 .divider {
 	position: relative;
 	float: left;
-	grid-column: span 10;
 	width: 100%;
 	height: 1px;
 	background-color: #e0e0e0;
@@ -107,10 +107,13 @@ main {
 }
 
 .seccion {
+	display: flex;
 	position: relative;
 	float: left;
 	box-sizing: border-box;
 	margin: 10px;
+	justify-content: center;
+	align-items: center;
 }
 
 .card {
@@ -128,8 +131,9 @@ main {
 	position: relative;	
 	float: left;		
 	clear: both;
-	margin: 10px;
-	box-sizing: border-box;
+	margin: 10px auto;
+	width: 100%;
+	height: auto;
 }
 
 .card__content__titulo {
@@ -140,16 +144,35 @@ main {
 	color: #212121;
 }
 
-.card__content__desc {
+.card__content__nombreCompleto {
 	position: relative;
-	clear: right;
-	float: right;
-	margin: 5px 0;
-	font-size: 14px;
-	color: #666666;
+	float: left;
+	margin: 8px 0 auto;
+	font-size: 24px;
+	color: #212121;
+	width: 100%;
 }
 
-.card__content__img {
+.card__content__desc {
+	position: relative;
+	clear: both;
+	float: left;
+	margin: 5px auto;
+	font-size: 14px;
+	color: #666666;
+	width: 100%;
+}
+
+.card__content__perfil {
+	position: relative;
+	overflow: hidden;
+	margin: auto;
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+}
+
+/*.card__content__img {
 	position: relative;
 	overflow: hidden;
 	float: left;
@@ -157,11 +180,20 @@ main {
 	width: 80px;
 	height: 80px;
 	border-radius: 80px;
-}
+}*/
 
-.card__content__img img {
+.card__content__img img, .card__content__perfil img {
 	width: 100%;
 	height: auto;
+}
+
+.card__content__nombre {
+	position: relative;
+	margin: auto;
+	width: 300px;
+	height: 70px;
+	text-align: center;
+
 }
 
 .card__content__contact {
@@ -233,6 +265,7 @@ main {
 }
 
 .seccion__menu {
+	/*visibility: hidden;*/
 	position: relative;
 	float: left;
   box-sizing: border-box;
@@ -257,6 +290,11 @@ main {
 
 .seccion__menu__lista__item:hover {
 	color: #018786;
+}
+
+.seccion__menu__lista__item:active {
+	color: #018786;
+	background-color: rgba(1, 135, 134, 0.1);
 }
 
 .seccion__menu__lista__item[selected=true] {
