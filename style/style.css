@@ -4,7 +4,9 @@ body {
 	width: 100%;
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
-	background-color: #FFFFFF;
+	background-image: url(../images/doodle_v1_preview.png);
+	background-repeat: no-repeat;
+	/*background-color: #FFFFFF;*/
 }
 
 header {
@@ -13,7 +15,7 @@ header {
 	display: inline-grid;
 	grid-template-columns: 10%;
 	grid-template-rows: 70px 40px;
-	height: 110px;
+	height: 80px;
 	width: 100%;
 	border-bottom: 1px solid #e0e0e0;
 }
@@ -24,13 +26,13 @@ header .titulo {
 	padding: 0 0 0 40px;
 	font-weight: 400;
 	font-size: 30px;
-	color: #5f6368;
+	color: #ffffff;
 }
 
 header .tabs {
+	display: none;
 	grid-column: 1 / 11;
   grid-row: 2;
-  display: inline-grid;
   grid-template-rows: 40px;
   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
 }
@@ -96,27 +98,36 @@ header .tabs {
 }
 
 main {
-	display: inline-grid;
-	grid-template-columns: 350px auto;
+	/*display: inline-grid;
+	grid-template-columns: 320px auto;*/
 	position: fixed;
-  top: 110px;
+  top: 80px;
   bottom: 0;
   width: 100%;
-  background-color: #F9F9F9;
+  /*background-color: #F9F9F9;*/
 }
 
 .seccion {
-	display: flex;
-	position: relative;
-	float: left;
+	/*display: flex;*/
+	position: fixed;
+	overflow: hidden;
+	overflow-y: scroll;
+	left: 340px;
+	right: 0;
+	bottom: 0;
+	top: 80px;
+	padding: 10px;
+	/*float: left;
 	justify-content: center;
-	align-items: center;
+	align-items: center;*/
 }
 
 .card {
 	position: relative;
 	float: left;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
+	margin: auto;
+	width: 550px;
 	padding: 16px;
 	background-color: #FFF;
 	border-radius: 4px;
@@ -134,7 +145,7 @@ main {
 
 .card__content__titulo {
 	position: relative;
-	float: right;
+	float: left;
 	margin: 8px 0 0 16px; 
 	font-size: 24px;
 	color: #212121;
@@ -262,15 +273,18 @@ main {
 .seccion__menu {
 	/*visibility: hidden;*/
 	position: relative;
-	float: left;
+	/*float: left;
   box-sizing: border-box;
-  margin: 8px;
+  margin: 8px;*/
+  width: 300px;
+  height: 100%;
   padding: 16px;
 }
 
 .seccion__menu__lista {
 	list-style: none;
 	padding: 8px 0;
+	margin: 0;
 	font-size: 24px;
 }
 
