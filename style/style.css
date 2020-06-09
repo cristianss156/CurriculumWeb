@@ -4,9 +4,14 @@ body {
 	width: 100%;
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
-	background-image: url(../images/doodle_v1_preview.png);
-	background-repeat: no-repeat;
-	/*background-color: #FFFFFF;*/
+	/*background-image: url(../images/doodle_v1_preview.png);
+	background-repeat: no-repeat;*/
+	background-color: #FFFFFF;
+}
+
+a {
+	text-decoration: none;
+	color: #212121;
 }
 
 header {
@@ -14,7 +19,8 @@ header {
 	z-index: 4;
 	display: inline-grid;
 	grid-template-columns: 10%;
-	grid-template-rows: 70px 40px;
+	grid-template-rows: 80px;
+	/*grid-template-rows: 70px 40px;*/
 	height: 80px;
 	width: 100%;
 	border-bottom: 1px solid #e0e0e0;
@@ -26,7 +32,7 @@ header .titulo {
 	padding: 0 0 0 40px;
 	font-weight: 400;
 	font-size: 30px;
-	color: #ffffff;
+	color: #212121;
 }
 
 header .tabs {
@@ -176,7 +182,7 @@ main {
 	margin: auto;
 	width: 80px;
 	height: 80px;
-	border-radius: 80px;
+	border-radius: 50%;
 }
 
 /*.card__content__img {
@@ -205,10 +211,10 @@ main {
 
 .card__content__contact {
 	display: inline-grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: 300px 160px;
 	float: left;	
-	margin: 5px 10px;
-	box-sizing: border-box;
+	margin: 5px 45px;
+	width: 460px;
 	color: #666666;
 }
 
