@@ -1,0 +1,58 @@
+/*------------------------------*/
+/* Light colors for application */
+/*------------------------------*/
+:root {
+
+  /* Primary backgrounds and text colors */
+  --primary: #0061a6;
+  --on-primary: #fff;
+  --primary-container: #d0e4ff;
+  --on-primary-container: #001d36;
+
+  /* Secondary backgrounds and text colors */
+  --secondary: #535f70;
+  --on-secondary: #fff;
+  --secondary-container: #d6e3f7;
+  --on-secondary-container: #101c2a;
+
+  /* Tertiary backgrounds and text colors */
+  --tertiary: #6b5778;
+  --on-tertiary: #fff;
+  --tertiary-container: #f3d9ff;
+  --on-tertiary-container: #251432;
+
+  /* Error backgrounds and text colors */
+  --error: #ba1b1b;
+  --on-error: #fff;
+  --error-container: #ffdad4;
+  --on-error-container: #410001;
+
+  /* Warning backgrounds and text colors */
+  --warning: #6e5e00;
+  --on-warning: #fff;
+  --warning-container: #fbe365;
+  --on-warning-container: #211b00;
+
+  /* Background backgrounds and text colors */
+  --background: #fdfcff;
+  --on-background: #1b1b1b;
+  --surface: #fdfcff;
+  --on-surface: #1b1b1b;
+
+  /* Outline and Surface variant backgrounds and text colors */
+  --outline: 1px solid #73777f;
+  --surface-variant: #dfe2eb;
+  --on-surface-variant: #43474e;
+
+  /* Survey options text colors */
+  --bad-feeling: #b00020;
+  --not-bad-feeling: #d06a0f;
+  --meh-feeling: #000;
+  --normal-feeling: #939000;
+  --good-feeling: #2e8e20;
+
+  /* Message toast colors */
+  --toast-container: #363636;
+  --on-toast-container: #ededed;
+
+}
