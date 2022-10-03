@@ -4,7 +4,8 @@ body {
 	width: 100%;
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
-	background-color: var(--background);
+	background-color: var(--secondary-container);
+	color: var(--on-secondary-container);
 }
 
 a {
@@ -20,7 +21,6 @@ header {
 	grid-template-rows: 80px;
 	height: 80px;
 	width: 100%;
-	/* border-bottom: var(--outline); */
 }
 
 header .titulo {
@@ -29,14 +29,13 @@ header .titulo {
 	padding: 0 0 0 40px;
 	font-weight: 400;
 	font-size: 30px;
-	color: var(--on-background);
 }
 
 .divider {
 	position: relative;
 	width: 100%;
 	height: 1px;
-	background-color: #e0e0e0;
+	background-color: var(--outline-variant);
 }
 
 main {
@@ -50,9 +49,6 @@ main {
 	position: fixed;
 	overflow: hidden;
 	overflow-y: scroll;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
 	left: 340px;
 	right: 0;
 	bottom: 0;
@@ -63,25 +59,32 @@ main {
 	-moz-border-radius: 14px 0 0;
 	-ms-border-radius: 14px 0 0;
 	-o-border-radius: 14px 0 0;
-	background-color: var(--primary-container);
+	background-color: var(--surface);
+}
+
+.containerTable {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	column-gap: 20px;
+	row-gap: 20px;
+}
+
+.firstColumn {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
 }
 
 .card {
-	/* position: relative;
-	display: flex;
-	flex-direction: column; */
-	/* justify-content: center;
-	align-items: center; */
 	width: 550px;
-	/* height: fit-content; */
+	height: fit-content;
 	padding: 16px;
 	border-radius: 14px;
 	-webkit-border-radius: 14px;
 	-moz-border-radius: 14px;
 	-ms-border-radius: 14px;
 	-o-border-radius: 14px;
-	background-color: var(--surface);
-	color: var(--on-surface);
 	border: var(--outline);
 }
 
@@ -99,7 +102,6 @@ main {
 .card__content__nombreCompleto {
 	position: relative;
 	font-size: 24px;
-	color: var(--on-background);
 	width: 100%;
 }
 
@@ -107,7 +109,7 @@ main {
 	position: relative;
 	margin: 5px auto;
 	font-size: 14px;
-	color: #666666;
+	color: var(--secondary);
 	width: 100%;
 }
 
@@ -144,7 +146,8 @@ main {
 	grid-template-columns: 300px 160px;
 	margin: 5px 45px;
 	width: 460px;
-	color: #666666;
+	color: var(--secondary);
+	;
 }
 
 .card__content__contact__item {
@@ -159,9 +162,11 @@ main {
 }
 
 .card__content__social {
-	display: inline-grid;
-	grid-template-columns: 33.33% 33.33% 33.33%;
-	margin: 5px auto 0;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
 	width: 100%;
 }
 
@@ -188,7 +193,8 @@ main {
 .card__content_item_det {
 	margin: 5px 10px 0 10px;
 	max-width: 500px;
-	color: #666666;
+	color: var(--secondary);
+	;
 }
 
 .seccion__menu {
@@ -207,6 +213,12 @@ main {
 
 .seccion__menu__lista__item {
 	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	column-gap: 15px;
 	height: 37px;
 	margin: 8px;
 	padding: 8px 20px;
@@ -216,6 +228,7 @@ main {
 	-moz-border-radius: 50px;
 	-ms-border-radius: 50px;
 	-o-border-radius: 50px;
+	color: var(--on-secondary-container);
 }
 
 .seccion__menu__lista__item:hover {
@@ -223,14 +236,13 @@ main {
 	background-color: var(--on-toast-container);
 }
 
-.seccion__menu__lista__item:active {
-	color: #018786;
-	background-color: rgba(1, 135, 134, 0.1);
-}
-
 .seccion__menu__lista__item[selected=true] {
 	color: var(--on-tertiary);
 	background-color: var(--tertiary);
+}
+
+.seccion__menu__lista__item[selected=true] .drawerIcon {
+	font-variation-settings: "FILL" 1, "wght" 500, "opsz" 24;
 }
 
 .downloadFAB {
@@ -263,32 +275,4 @@ main {
 	margin-right: 12px;
 	width: 24px;
 	height: 24px;
-}
-
-.tooltiptext {
-	position: fixed;
-	z-index: 5;
-	visibility: hidden;
-	bottom: 83px;
-	right: 56px;
-	box-sizing: border-box;
-	padding: 8px;
-	max-width: 170px;
-	color: #ffffff;
-	text-align: center;
-	font-size: 10px;
-	line-height: 14px;
-	font-weight: 500;
-	letter-spacing: .0892857143em;
-	text-transform: none;
-	border-radius: 2px;
-	background-color: #616161e6;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	-ms-border-radius: 2px;
-	-o-border-radius: 2px;
-}
-
-.tooltip:hover .tooltiptext {
-	visibility: visible;
 }

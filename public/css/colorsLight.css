@@ -41,6 +41,7 @@
 
   /* Outline and Surface variant backgrounds and text colors */
   --outline: 1px solid #73777f;
+  --outline-variant: #c6c6ca;
   --surface-variant: #dfe2eb;
   --on-surface-variant: #43474e;
 

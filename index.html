@@ -6,7 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="public/css/colorsLight.css">
 	<link rel="stylesheet" type="text/css" href="public/css/style.css">
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- <link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,200" /> -->
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
 		rel="stylesheet">
 	<title>Curriculum - Cristian Silvestre Sánchez</title>
@@ -22,138 +25,151 @@
 		<nav class="seccion__menu">
 			<ul class="seccion__menu__lista">
 				<a href="#perfil">
-					<li class="seccion__menu__lista__item" selected="true">Perfil</li>
+					<li class="seccion__menu__lista__item" selected="true">
+						<span class="material-symbols-rounded drawerIcon">account_box</span>
+						Perfil
+					</li>
 				</a>
 				<a href="#trabajos">
-					<li class="seccion__menu__lista__item" selected="false">Experiencia</li>
+					<li class="seccion__menu__lista__item" selected="false">
+						<span class="material-symbols-rounded" drawerIcon>work</span>
+						Experiencia
+					</li>
 				</a>
 				<a href="#estudios">
-					<li class="seccion__menu__lista__item" selected="false">Conocimientos</li>
+					<li class="seccion__menu__lista__item" selected="false">
+						<span class="material-symbols-rounded drawerIcon">school</span>
+						Conocimientos
+
+					</li>
 				</a>
 			</ul>
 		</nav>
 
 		<section class="seccion">
 
-			<div id="perfil" class="card">
-				<div class="card__content">
-					<div class="card__content__perfil">
-						<img src="public/images/foto.jpg" alt="Foto de perfil" />
-					</div>
-					<div class="card__content__nombre">
-						<span class="card__content__nombreCompleto">Cristian Silvestre Sánchez</span>
-						<span class="card__content__desc">Desarrollador web / Web developer</span>
-					</div>
-				</div>
-
-				<div class="divider"></div>
-
-				<div class="card__content">
-					<div class="card__content__contact">
-						<div class="card__content__contact__item">
-							<span class="material-icons md-24">place</span>
-							<span class="card__content__contact__item__desc">Madrid</span>
+			<div class="containerTable">
+				<div class="firstColumn">
+					<div id="perfil" class="card">
+						<div class="card__content">
+							<div class="card__content__perfil">
+								<img src="public/images/foto.jpg" alt="Foto de perfil" />
+							</div>
+							<div class="card__content__nombre">
+								<span class="card__content__nombreCompleto">Cristian Silvestre Sánchez</span>
+								<span class="card__content__desc">Desarrollador web / Web developer</span>
+							</div>
 						</div>
-						<div class="card__content__contact__item">
-							<span class="material-icons md-24">event</span>
-							<span class="card__content__contact__item__desc">25-11-1991</span>
+
+						<div class="divider"></div>
+
+						<div class="card__content">
+							<div class="card__content__contact">
+								<div class="card__content__contact__item">
+									<span class="material-symbols-rounded">place</span>
+									<span class="card__content__contact__item__desc">Madrid</span>
+								</div>
+								<div class="card__content__contact__item">
+									<span class="material-symbols-rounded">event</span>
+									<span class="card__content__contact__item__desc">25-11-1991</span>
+								</div>
+								<div class="card__content__contact__item">
+									<span class="material-symbols-rounded">mail</span>
+									<span class="card__content__contact__item__desc">cristian4silvestre@gmail.com</span>
+								</div>
+								<div class="card__content__contact__item">
+									<span class="material-symbols-rounded">call</span>
+									<span class="card__content__contact__item__desc">679123744</span>
+								</div>
+							</div>
 						</div>
-						<div class="card__content__contact__item">
-							<span class="material-icons md-24">mail</span>
-							<span class="card__content__contact__item__desc">cristian4silvestre@gmail.com</span>
+
+						<div class="divider"></div>
+
+						<div class="card__content">
+							<div class="card__content__social">
+								<a href="https://github.com/cristianss156">
+									<img class="card__content__social__item" src="public/images/github.png" alt="GitHub" />
+								</a>
+								<a href="https://www.linkedin.com/in/cristianss156">
+									<img class="card__content__social__item" src="public/images/linkedIn.png" alt="LinkedIn" />
+								</a>
+							</div>
 						</div>
-						<div class="card__content__contact__item">
-							<span class="material-icons md-24">call</span>
-							<span class="card__content__contact__item__desc">679123744</span>
+					</div>
+
+					<div id="estudios" class="card">
+						<div class="card__content">
+							<span class="card__content__titulo">Estudios</span>
+							<div class="card__content_item">
+								<p class="card__content_item_name">
+									<strong>Desarrollo de Aplicaciones Web (DAW)</strong> (2013 - 2015)
+								</p>
+							</div>
+
+							<div class="card__content_item">
+								<p class="card__content_item_name">
+									<strong>Administración de Sistemas Informáticos en Red (ASIR)</strong> (2010 - 2012)
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="trabajos" class="card">
+					<div class="card__content">
+						<span class="card__content__titulo">Experiencia laboral</span>
+						<div class="card__content_item">
+							<p class="card__content_item_name">
+								<strong>Eurofins Megalab</strong> (2020 - Actualidad)
+							</p>
+							<p class="card__content_item_det">
+								Desarrollo web, Powershell, Mirth Connect, SharepPoint Server 2019
+							</p>
+						</div>
+
+						<div class="card__content_item">
+							<p class="card__content_item_name">
+								<strong>Etiquetas Adhegrafic S.L.</strong> (2017 - 2019)
+							</p>
+							<p class="card__content_item_det">
+								Mantenimiento y ampliación de aplicaciones de escritorio (Windows) desarrollas en Delphi XE7, inicio de
+								migración de MS Access a MySQL y adaptación de aplicaciones, mantenimiento de equipos con Windows 10,
+								servidores Windows Server 2003/2008 y Microsoft Exchange 2013.
+							</p>
+						</div>
+
+						<div class="card__content_item">
+							<p class="card__content_item_name">
+								<strong>Real Ideas Store S.L.</strong> (2016 - 2017)
+							</p>
+							<p class="card__content_item_det">
+								Desarrollo de herramientas internas con PHP, PDO, MySQL, Javascript, jQuery y Ajax.
+							</p>
+						</div>
+
+						<div class="card__content_item">
+							<p class="card__content_item_name">
+								<strong>Everis Centers S.L.U.</strong> (2016 - 2016)
+							</p>
+							<p class="card__content_item_det">
+								Participación en proyecto en Salesforce.
+							</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="divider"></div>
 
-				<div class="card__content">
-					<div class="card__content__social">
-						<a href="https://github.com/cristianss156">
-							<img class="card__content__social__item" src="public/images/github.png" alt="GitHub" />
-						</a>
-						<a href="https://www.linkedin.com/in/cristianss156">
-							<img class="card__content__social__item" src="public/images/linkedIn.png" alt="LinkedIn" />
-						</a>
-						<a href="https://www.facebook.com/cristianss156">
-							<img class="card__content__social__item" src="public/images/facebook.png" alt="Facebook" />
-						</a>
-					</div>
-				</div>
 
-			</div>
-
-			<div id="trabajos" class="card">
-				<div class="card__content">
-					<span class="card__content__titulo">Experiencia laboral</span>
-					<div class="card__content_item">
-						<p class="card__content_item_name">
-							<strong>Eurofins Megalab</strong> (2020 - Actualidad)
-						</p>
-						<p class="card__content_item_det">
-							Desarrollo web, Powershell, Mirth Connect, SharepPoint Server 2019
-						</p>
-					</div>
-
-					<div class="card__content_item">
-						<p class="card__content_item_name">
-							<strong>Etiquetas Adhegrafic S.L.</strong> (2017 - 2019)
-						</p>
-						<p class="card__content_item_det">
-							Mantenimiento y ampliación de aplicaciones de escritorio (Windows) desarrollas en Delphi XE7, inicio de
-							migración de MS Access a MySQL y adaptación de aplicaciones, mantenimiento de equipos con Windows 10,
-							servidores Windows Server 2003/2008 y Microsoft Exchange 2013.
-						</p>
-					</div>
-
-					<div class="card__content_item">
-						<p class="card__content_item_name">
-							<strong>Real Ideas Store S.L.</strong> (2016 - 2017)
-						</p>
-						<p class="card__content_item_det">
-							Desarrollo de herramientas internas con PHP, PDO, MySQL, Javascript, jQuery y Ajax.
-						</p>
-					</div>
-
-					<div class="card__content_item">
-						<p class="card__content_item_name">
-							<strong>Everis Centers S.L.U.</strong> (2016 - 2016)
-						</p>
-						<p class="card__content_item_det">
-							Participación en proyecto en Salesforce.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div id="estudios" class="card">
-				<div class="card__content">
-					<span class="card__content__titulo">Estudios</span>
-					<div class="card__content_item">
-						<p class="card__content_item_name">
-							<strong>Desarrollo de Aplicaciones Web (DAW)</strong> (2013 - 2015)
-						</p>
-					</div>
-
-					<div class="card__content_item">
-						<p class="card__content_item_name">
-							<strong>Administración de Sistemas Informáticos en Red (ASIR)</strong> (2010 - 2012)
-						</p>
-					</div>
-				</div>
 			</div>
 
 		</section>
 	</main>
 
-	<div class="downloadFAB tooltip">
-		<span class="material-icons md-24 downloadFAB__action">get_app</span>
+	<div class="downloadFAB" title="Descargar curriculu">
+		<span class="material-symbols-rounded downloadFAB__action">get_app</span>
 		<span>Curriculum</span>
-		<span class="tooltiptext">Descargar curriculum</span>
 	</div>
 </body>
 
