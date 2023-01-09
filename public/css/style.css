@@ -23,12 +23,16 @@ header {
 	width: 100%;
 }
 
-header .titulo {
-	grid-column: 1 / 11;
-	grid-row: 1;
-	padding: 0 0 0 40px;
-	font-weight: 400;
-	font-size: 30px;
+.header__imgage {
+	margin: auto 24px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border: var(--outline);
 }
 
 .divider {
@@ -67,10 +71,9 @@ main {
 	flex-direction: row;
 	flex-wrap: wrap;
 	column-gap: 20px;
-	row-gap: 20px;
 }
 
-.firstColumn {
+.columns {
 	display: flex;
 	flex-direction: column;
 	row-gap: 20px;
@@ -93,7 +96,7 @@ main {
 	width: 100%;
 }
 
-.card__content__titulo {
+.card__content__title {
 	position: relative;
 	font-size: 24px;
 	color: var(--on-background);

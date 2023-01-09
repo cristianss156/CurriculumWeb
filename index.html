@@ -6,19 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="public/css/colorsLight.css">
 	<link rel="stylesheet" type="text/css" href="public/css/style.css">
-	<!-- <link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,500,0,200" /> -->
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
 		rel="stylesheet">
-	<title>Curriculum - Cristian Silvestre Sánchez</title>
+	<link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon">
+	<title>CSS - Cristian Silvestre Sánchez</title>
 </head>
 
 <body>
 
 	<header>
-		<h1 class="titulo">Curriculum</h1>
+		<img src="public/images/androidify.png" alt="Header avatar image" class="header__imgage">
+		<span class="material-symbols-rounded"></span>
 	</header>
 
 	<main>
@@ -32,15 +32,14 @@
 				</a>
 				<a href="#trabajos">
 					<li class="seccion__menu__lista__item" selected="false">
-						<span class="material-symbols-rounded" drawerIcon>work</span>
-						Experiencia
+						<span class="material-symbols-rounded" drawerIcon>view_carousel</span>
+						Proyectos
 					</li>
 				</a>
 				<a href="#estudios">
 					<li class="seccion__menu__lista__item" selected="false">
 						<span class="material-symbols-rounded drawerIcon">school</span>
 						Conocimientos
-
 					</li>
 				</a>
 			</ul>
@@ -49,11 +48,11 @@
 		<section class="seccion">
 
 			<div class="containerTable">
-				<div class="firstColumn">
+				<div class="columns">
 					<div id="perfil" class="card">
 						<div class="card__content">
 							<div class="card__content__perfil">
-								<img src="public/images/foto.jpg" alt="Foto de perfil" />
+								<img src="public/images/profile.jpg" alt="Foto de perfil" />
 							</div>
 							<div class="card__content__nombre">
 								<span class="card__content__nombreCompleto">Cristian Silvestre Sánchez</span>
@@ -100,7 +99,7 @@
 
 					<div id="estudios" class="card">
 						<div class="card__content">
-							<span class="card__content__titulo">Estudios</span>
+							<span class="card__content__title">Estudios</span>
 							<div class="card__content_item">
 								<p class="card__content_item_name">
 									<strong>Desarrollo de Aplicaciones Web (DAW)</strong> (2013 - 2015)
@@ -117,51 +116,83 @@
 
 				</div>
 
-				<div id="trabajos" class="card">
-					<div class="card__content">
-						<span class="card__content__titulo">Experiencia laboral</span>
-						<div class="card__content_item">
-							<p class="card__content_item_name">
-								<strong>Eurofins Megalab</strong> (2020 - Actualidad)
-							</p>
-							<p class="card__content_item_det">
-								Desarrollo web, Powershell, Mirth Connect, SharepPoint Server 2019
-							</p>
-						</div>
+				<div class="columns">
+					<div id="trabajos" class="card">
+						<div class="card__content">
+							<span class="card__content__title">Experiencia laboral</span>
+							<div class="card__content_item">
+								<p class="card__content_item_name">
+									<strong>Eurofins Megalab</strong> (2020 - Actualidad)
+								</p>
+								<p class="card__content_item_det">
+									Desarrollo web, Powershell, Mirth Connect, SharepPoint Server 2019
+								</p>
+							</div>
 
-						<div class="card__content_item">
-							<p class="card__content_item_name">
-								<strong>Etiquetas Adhegrafic S.L.</strong> (2017 - 2019)
-							</p>
-							<p class="card__content_item_det">
-								Mantenimiento y ampliación de aplicaciones de escritorio (Windows) desarrollas en Delphi XE7, inicio de
-								migración de MS Access a MySQL y adaptación de aplicaciones, mantenimiento de equipos con Windows 10,
-								servidores Windows Server 2003/2008 y Microsoft Exchange 2013.
-							</p>
-						</div>
+							<div class="card__content_item">
+								<p class="card__content_item_name">
+									<strong>Etiquetas Adhegrafic S.L.</strong> (2017 - 2019)
+								</p>
+								<p class="card__content_item_det">
+									Mantenimiento y ampliación de aplicaciones de escritorio (Windows) desarrollas en Delphi XE7, inicio
+									de
+									migración de MS Access a MySQL y adaptación de aplicaciones, mantenimiento de equipos con Windows 10,
+									servidores Windows Server 2003/2008 y Microsoft Exchange 2013.
+								</p>
+							</div>
 
-						<div class="card__content_item">
-							<p class="card__content_item_name">
-								<strong>Real Ideas Store S.L.</strong> (2016 - 2017)
-							</p>
-							<p class="card__content_item_det">
-								Desarrollo de herramientas internas con PHP, PDO, MySQL, Javascript, jQuery y Ajax.
-							</p>
-						</div>
+							<div class="card__content_item">
+								<p class="card__content_item_name">
+									<strong>Real Ideas Store S.L.</strong> (2016 - 2017)
+								</p>
+								<p class="card__content_item_det">
+									Desarrollo de herramientas internas con PHP, PDO, MySQL, Javascript, jQuery y Ajax.
+								</p>
+							</div>
 
-						<div class="card__content_item">
-							<p class="card__content_item_name">
-								<strong>Everis Centers S.L.U.</strong> (2016 - 2016)
-							</p>
-							<p class="card__content_item_det">
-								Participación en proyecto en Salesforce.
-							</p>
+							<div class="card__content_item">
+								<p class="card__content_item_name">
+									<strong>Everis Centers S.L.U.</strong> (2016 - 2016)
+								</p>
+								<p class="card__content_item_det">
+									Participación en proyecto en Salesforce.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card__content">
+							<span class="card__content__title">Otros conocimientos</span>
+							<div class="card__content_item">
+								<p class="card__content_item_name">
+									<strong>Nivel alto</strong>
+								</p>
+								<p class="card__content_item_det">
+									HTML5, CSS, Javascript 
+								</p>
+							</div>
+
+							<div class="card__content_item">
+								<p class="card__content_item_name">
+									<strong>Nivel medio</strong>
+								</p>
+								<p class="card__content_item_det">
+									CSS3, PHP
+								</p>
+							</div>
+
+							<div class="card__content_item">
+								<p class="card__content_item_name">
+									<strong>Nivel bajo</strong>
+								</p>
+								<p class="card__content_item_det">
+									Google Apps Script, PowerShell, Angular, React
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
-
-
-
 			</div>
 
 		</section>
